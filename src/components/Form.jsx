@@ -39,7 +39,7 @@ const Form = () => {
             finalCapital = Math.floor(capital + profit)
 
             setDetails((oldArr) => [
-                ...oldArr, {
+                 {
                     capital,
                     profit,
                     finalCapital
