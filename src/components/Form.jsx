@@ -33,6 +33,14 @@ const Form = () => {
         setProfit(profit)
         setFinalCapital(finalCapital)
 
+        for(let i = 0; i <= duration; i++){
+            capital = finalCapital
+            profit = capital * (percent / 100)
+            finalCapital = Math.floor(capital + profit)
+
+            console.log(capital, profit, finalCapital)
+        }
+
     }
 
     return (
