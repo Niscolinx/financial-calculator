@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 
 const Form = () => {
-    const [capital, setCapital] = useState(0)
-    const [percent, setPercent] = useState(0)
-    const [duration, setDuration] = useState(0)
+    const [capital, setCapital] = useState('')
+    const [percent, setPercent] = useState('')
+    const [duration, setDuration] = useState('')
+    const [profit, setProfit] = useState(0)
+    const [finalCapital, setFinalCapital] = useState('')
 
     const handleCapital = (e) => {
         setCapital(e.target.value)
@@ -20,6 +22,9 @@ const Form = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+
+        const profit = capital * (percent / 100)
+        setProfit(profit)
     }
 
     return (
@@ -73,11 +78,27 @@ const Form = () => {
                     </h4>
 
                     <p>
-                        Invested Capital: <span className='font-bold'>${capital}</span>
+                        Invested Capital:{' '}
+                        <span className='font-bold'>${capital}</span>
                     </p>
                     <p>
-                        Percentage Increase: <span className='font-bold'>{percent}</span>
+                        Percentage Increase:{' '}
+                        <span className='font-bold'>{percent}</span>
                     </p>
+
+                    <div className='mt-6'>
+                        <div className='border-t'>
+                            <p>
+                                Initial Capital: <span>{capital}</span>
+                            </p>
+                            <p>
+                                profit: <span>{profit}</span>
+                            </p>
+                            <p>
+                                Final Capital: <span>{finalCapital}</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
