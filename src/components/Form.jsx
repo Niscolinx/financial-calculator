@@ -33,22 +33,21 @@ const Form = () => {
         setProfit(profit)
         setFinalCapital(finalCapital)
 
-        for(let i = 0; i <= duration; i++){
+        let toCount = []
+
+        for (let i = 0; i <= duration; i++) {
             capital = finalCapital
             profit = capital * (percent / 100)
             finalCapital = Math.floor(capital + profit)
 
-            setDetails((oldArr) => [
-                 {
-                    capital,
-                    profit,
-                    finalCapital
-                }
-            ])
+            toCount.push({
+                capital,
+                profit,
+                finalCapital,
+            })
 
             console.log(capital, profit, finalCapital)
         }
-
     }
 
     console.log(details)
@@ -59,10 +58,7 @@ const Form = () => {
                 Financial Calculator
             </h2>
             <div className='flex gap-8'>
-                <form
-                    className='grid w-full'
-                    onSubmit={handleSubmit}
-                >
+                <form className='grid w-full' onSubmit={handleSubmit}>
                     <input
                         type='number'
                         id='capital'
@@ -124,7 +120,6 @@ const Form = () => {
                                 Final Capital: <span>${finalCapital}</span>
                             </p>
                         </div>
-                     
                     </div>
                 </div>
             </div>
