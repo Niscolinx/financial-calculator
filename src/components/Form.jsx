@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 
 const Form = () => {
-
     const [capital, setCapital] = useState('')
     const [percent, setPercent] = useState('')
     const [duration, setDuration] = useState('')
@@ -14,24 +13,21 @@ const Form = () => {
     const handlePercent = (e) => {
         setPercent(e.target.value)
     }
- 
-    const handleDuration = e => {
+
+    const handleDuration = (e) => {
         setDuration(e.target.value)
     }
-    
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-
-       
     }
 
     return (
-        <div className='flex w-full place-content-stretch bg-white'>
-            <div className='grid'>
-                <h2 className='font-medium text-center text-[#1c124d] mb-4 text-2xl'>
-                    Financial Calculator
-                </h2>
+        <div className='grid w-full place-content-stretch bg-white'>
+            <h2 className='font-medium text-center text-[#1c124d] mb-4 text-2xl'>
+                Financial Calculator
+            </h2>
+            <div className='flex'>
                 <form
                     className='grid w-full place-content-stretch'
                     style={{ padding: '30px 15px' }}
