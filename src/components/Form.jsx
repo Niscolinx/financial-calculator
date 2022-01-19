@@ -26,11 +26,13 @@ const Form = () => {
 
         capital = Number(capital)
         percent = Number(percent)
+        duration = Number(duration)
 
-        const profit = capital * (percent / 100)
-        const finalCapital = capital + profit
+        let profit = capital * (percent / 100)
+        let finalCapital = capital + profit
         setProfit(profit)
         setFinalCapital(finalCapital)
+
     }
 
     return (
