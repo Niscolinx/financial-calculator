@@ -68,10 +68,13 @@ const Form = () => {
                         Calculate
                     </button>
                 </form>
-                <div className='gs'>
+                <div className=''>
                     <h4 className='font-medium text-center text-[#1c124d] mb-4 text-2xl'>
-                        Sum Total
+                        Investment Details
                     </h4>
+
+                    <p>Invested Capital: <span>N{capital}</span></p>
+                    <p>Percentage Increase: <span>{percent}</span></p>
                 </div>
             </div>
         </div>
