@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
-import URL from './Url.js'
 
-const Form = (props) => {
+const Form = () => {
 
-    const history = useHistory()
     const [capital, setCapital] = useState('')
     const [percent, setPercent] = useState('')
-    const [loading, setLoading] = useState(false)
+    const [duration, setDuration] = useState('')
 
     const handleCapital = (e) => {
         setCapital(e.target.value)
@@ -17,12 +15,13 @@ const Form = (props) => {
         setPercent(e.target.value)
     }
  
-
+    const handleDuration = e => {
+        setDuration(e.target.value)
+    }
     
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        setLoading(true)
 
        
     }
@@ -53,6 +52,15 @@ const Form = (props) => {
                 value={percent}
                 onChange={handlePercent}
                 placeholder='Percentage'
+            />
+            <input
+                type='number'
+                id='duration'
+                className='text-black outline-none text-lg p-1 rounded-md justify-self-stretch placeholder-[#b2b7be] focus:border-black mb-4'
+                required
+                value={duration}
+                onChange={handleDuration}
+                placeholder='duration'
             />
 
             <button
