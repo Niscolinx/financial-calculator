@@ -37,7 +37,7 @@ const Form = () => {
 
         for (let i = 0; i <= duration; i++) {
             capital = finalCapital
-            profit =  Math.floor(capital * (percent / 100))
+            profit = Math.floor(capital * (percent / 100))
             finalCapital = Math.floor(capital + profit)
 
             toCount.push({
@@ -122,6 +122,24 @@ const Form = () => {
                                 Final Capital: <span>${finalCapital}</span>
                             </p>
                         </div>
+                        {details &&
+                            details.map((value) => {
+                                return (
+                                    <div className='border-t'>
+                                        <p>
+                                            Initial Capital:{' '}
+                                            <span>${value.capital}</span>
+                                        </p>
+                                        <p>
+                                            profit: <span>${value.profit}</span>
+                                        </p>
+                                        <p>
+                                            Final Capital:{' '}
+                                            <span>${value.finalCapital}</span>
+                                        </p>
+                                    </div>
+                                )
+                            })}
                     </div>
                 </div>
             </div>
