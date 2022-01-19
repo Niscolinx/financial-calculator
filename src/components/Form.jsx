@@ -36,9 +36,9 @@ const Form = () => {
         let toCount = []
 
         for (let i = 0; i <= duration; i++) {
-            capital = Number(finalCapital).toFixed(2)
-            profit =  capital * (percent / 100).toFixed(2)
-            finalCapital = Number(capital + profit).toFixed()
+            capital = finalCapital
+            profit =  Math.floor(capital * (percent / 100))
+            finalCapital = Math.floor(capital + profit)
 
             toCount.push({
                 capital,
