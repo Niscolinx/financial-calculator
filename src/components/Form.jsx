@@ -134,7 +134,7 @@ const Form = () => {
                             details.map((value, i) => {
                                 return (
                                     <div className='border-t mt-2 relative' key={i}>
-                                        <span className='absolute right-0 bg-[#1c124d] text-white p-2'>
+                                        <span className='absolute right-0 bg-[#1c124d] text-white p-1'>
                                             {i}
                                         </span>
                                         <p>
