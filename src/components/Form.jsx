@@ -137,7 +137,7 @@ const Form = () => {
                                 return (
                                     <div className='border-t mt-2 relative' key={i}>
                                         <span className='absolute right-0 bg-[#1c124d] text-white p-2'>
-                                            1
+                                            {i}
                                         </span>
                                         <p>
                                             Initial Capital:{' '}
