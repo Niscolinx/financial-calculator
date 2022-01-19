@@ -103,7 +103,9 @@ const Form = () => {
 
                     <p>
                         Invested Capital:{' '}
-                        <span className='font-bold'>${capital}</span>
+                        <span className='font-bold' className='font-bold'>
+                            ${capital}
+                        </span>
                     </p>
                     <p>
                         Percentage Increase:{' '}
@@ -113,13 +115,18 @@ const Form = () => {
                     <div className='mt-6'>
                         <div className='border-t'>
                             <p>
-                                Initial Capital: <span>${capital}</span>
+                                Initial Capital:{' '}
+                                <span className='font-bold'>${capital}</span>
                             </p>
                             <p>
-                                profit: <span>${profit}</span>
+                                profit:{' '}
+                                <span className='font-bold'>${profit}</span>
                             </p>
                             <p>
-                                Final Capital: <span>${finalCapital}</span>
+                                Final Capital:{' '}
+                                <span className='font-bold'>
+                                    ${finalCapital}
+                                </span>
                             </p>
                         </div>
                         {details &&
@@ -128,14 +135,21 @@ const Form = () => {
                                     <div className='border-t mt-2' key={i}>
                                         <p>
                                             Initial Capital:{' '}
-                                            <span>${value.capital}</span>
+                                            <span className='font-bold'>
+                                                ${value.capital}
+                                            </span>
                                         </p>
                                         <p>
-                                            profit: <span>${value.profit}</span>
+                                            profit:{' '}
+                                            <span className='font-bold'>
+                                                ${value.profit}
+                                            </span>
                                         </p>
                                         <p>
                                             Final Capital:{' '}
-                                            <span>${value.finalCapital}</span>
+                                            <span className='font-bold'>
+                                                ${value.finalCapital}
+                                            </span>
                                         </p>
                                     </div>
                                 )
