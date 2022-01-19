@@ -103,28 +103,7 @@ const Form = () => {
                                 Final Capital: <span>${finalCapital}</span>
                             </p>
                         </div>
-                        <div className='border-t'>
-                            <p>
-                                Initial Capital: <span>${capital}</span>
-                            </p>
-                            <p>
-                                profit: <span>${profit}</span>
-                            </p>
-                            <p>
-                                Final Capital: <span>${finalCapital}</span>
-                            </p>
-                        </div>
-                        <div className='border-t'>
-                            <p>
-                                Initial Capital: <span>${capital}</span>
-                            </p>
-                            <p>
-                                profit: <span>${profit}</span>
-                            </p>
-                            <p>
-                                Final Capital: <span>${finalCapital}</span>
-                            </p>
-                        </div>
+                     
                     </div>
                 </div>
             </div>
