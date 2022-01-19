@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 
 const Form = () => {
-    const [capital, setCapital] = useState(0)
-    const [percent, setPercent] = useState(0)
-    const [duration, setDuration] = useState(1)
-    const [profit, setProfit] = useState(0)
-    const [finalCapital, setFinalCapital] = useState('')
+    let [capital, setCapital] = useState('')
+    let [percent, setPercent] = useState('')
+    let [duration, setDuration] = useState('')
+    let [profit, setProfit] = useState(0)
+    let [finalCapital, setFinalCapital] = useState('')
 
     const handleCapital = (e) => {
         setCapital(e.target.value)
@@ -23,8 +23,11 @@ const Form = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        const profit = Number(capital * (percent / 100))
-        const finalCapital = Number(capital + profit)
+        capital = Number(capital)
+        percent = Number(percent)
+
+        const profit = capital * (percent / 100)
+        const finalCapital = capital + profit
         setProfit(profit)
         setFinalCapital(finalCapital)
     }
