@@ -23,7 +23,8 @@ const Form = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        const profit = capital * (percent / 100)
+        const profit = Number(capital * (percent / 100))
+        const finalCapital = Number(capital + profit)
         setProfit(profit)
     }
 
