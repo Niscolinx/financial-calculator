@@ -38,6 +38,12 @@ const Form = () => {
             profit = capital * (percent / 100)
             finalCapital = Math.floor(capital + profit)
 
+            setDetails((oldArr) => [
+                ...oldArr, {
+                    
+                }
+            ])
+
             console.log(capital, profit, finalCapital)
         }
 
