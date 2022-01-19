@@ -123,9 +123,9 @@ const Form = () => {
                             </p>
                         </div>
                         {details &&
-                            details.map((value) => {
+                            details.map((value, i) => {
                                 return (
-                                    <div className='border-t'>
+                                    <div className='border-t' key={i}>
                                         <p>
                                             Initial Capital:{' '}
                                             <span>${value.capital}</span>
