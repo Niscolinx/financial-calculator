@@ -59,7 +59,7 @@ const Form = () => {
             <h2 className='font-medium text-center text-[#1c124d] mb-4 text-2xl'>
                 Financial Calculator
             </h2>
-            <div className='flex gap-8'>
+            <div className='grid gap-8'>
                 <form className='grid w-full' onSubmit={handleSubmit}>
                     <input
                         type='number'
