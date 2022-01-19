@@ -23,14 +23,13 @@ const Form = () => {
     }
 
     return (
-        <div className='grid w-full place-content-stretch bg-white'>
+        <div className='grid w-full place-content-stretch bg-white py-8 px-12'>
             <h2 className='font-medium text-center text-[#1c124d] mb-4 text-2xl'>
                 Financial Calculator
             </h2>
             <div className='flex'>
                 <form
                     className='grid w-full place-content-stretch'
-                    style={{ padding: '30px 15px' }}
                     onSubmit={handleSubmit}
                 >
                     <input
@@ -68,13 +67,17 @@ const Form = () => {
                         Calculate
                     </button>
                 </form>
-                <div className=''>
+                <div className='text-[#1c124d]'>
                     <h4 className='font-medium text-center text-[#1c124d] mb-4 text-2xl'>
                         Investment Details
                     </h4>
 
-                    <p>Invested Capital: <span>N{capital}</span></p>
-                    <p>Percentage Increase: <span>{percent}</span></p>
+                    <p>
+                        Invested Capital: <span>${capital}</span>
+                    </p>
+                    <p>
+                        Percentage Increase: <span>{percent}</span>
+                    </p>
                 </div>
             </div>
         </div>
