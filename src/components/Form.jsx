@@ -26,6 +26,7 @@ const Form = () => {
         const profit = Number(capital * (percent / 100))
         const finalCapital = Number(capital + profit)
         setProfit(profit)
+        setFinalCapital(finalCapital)
     }
 
     return (
