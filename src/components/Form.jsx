@@ -113,7 +113,10 @@ const Form = () => {
                     </p>
 
                     <div className='mt-6'>
-                        <div className='border-t'>
+                        <div className='border-t relative'>
+                            <span className='absolute right-0 bg-[#1c124d] text-white p-2'>
+                                1
+                            </span>
                             <p>
                                 Initial Capital:{' '}
                                 <span className='font-bold'>${capital}</span>
@@ -132,7 +135,10 @@ const Form = () => {
                         {details &&
                             details.map((value, i) => {
                                 return (
-                                    <div className='border-t mt-2' key={i}>
+                                    <div className='border-t mt-2 relative' key={i}>
+                                        <span className='absolute right-0 bg-[#1c124d] text-white p-2'>
+                                            1
+                                        </span>
                                         <p>
                                             Initial Capital:{' '}
                                             <span className='font-bold'>
