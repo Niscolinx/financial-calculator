@@ -67,7 +67,7 @@ const Form = () => {
                         Calculate
                     </button>
                 </form>
-                <div className='text-[#1c124d]'>
+                <div className='text-[#1c124d] border-2 rounded-md border-[#ccc]'>
                     <h4 className='font-medium text-center text-[#1c124d] mb-4 text-2xl'>
                         Investment Details
                     </h4>
