@@ -39,7 +39,7 @@ const Form = () => {
             </h2>
             <div className='flex gap-8'>
                 <form
-                    className='grid w-full place-content-stretch'
+                    className='grid w-full'
                     onSubmit={handleSubmit}
                 >
                     <input
