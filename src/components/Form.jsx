@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 
 const Form = () => {
-    const [capital, setCapital] = useState('')
-    const [percent, setPercent] = useState('')
-    const [duration, setDuration] = useState('')
+    const [capital, setCapital] = useState(0)
+    const [percent, setPercent] = useState(0)
+    const [duration, setDuration] = useState(0)
 
     const handleCapital = (e) => {
         setCapital(e.target.value)
