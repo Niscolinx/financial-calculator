@@ -7,6 +7,7 @@ const Form = () => {
     let [duration, setDuration] = useState('')
     let [profit, setProfit] = useState(0)
     let [finalCapital, setFinalCapital] = useState('')
+    const [details, setDetails] = useState([])
 
     const handleCapital = (e) => {
         setCapital(e.target.value)
