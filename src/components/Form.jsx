@@ -40,7 +40,9 @@ const Form = () => {
 
             setDetails((oldArr) => [
                 ...oldArr, {
-                    
+                    capital,
+                    profit,
+                    finalCapital
                 }
             ])
 
