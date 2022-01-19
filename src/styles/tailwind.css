@@ -1,0 +1,39 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@layer base {
+    body {
+        @apply bg-[#00193f] text-white;
+        @apply font-Helvetica;
+    }
+
+    /* @font-face {
+        font-family: Graphik;
+        src: url(../assets/fonts/GraphikRegular.otf);
+    } */
+    @font-face {
+        font-family: HelveticaBold;
+        src: url(../assets/fonts/Helvetica-Bold.ttf);
+    } 
+    @font-face {
+        font-family: Helvetica;
+        src: url(../assets/fonts/Helvetica.ttf);
+    }
+    @font-face {
+        font-family: BrownBold;
+        src: url(../assets/fonts/Brown/BrownBold.ttf);
+    }
+
+    h1 {
+        @apply text-2xl;
+    }
+    h2 {
+        @apply text-xl;
+    }
+    h3 {
+        @apply text-lg;
+    }
+}
