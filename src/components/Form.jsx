@@ -73,10 +73,10 @@ const Form = () => {
                     </h4>
 
                     <p>
-                        Invested Capital: <span>${capital}</span>
+                        Invested Capital: <span className='font-bold'>${capital}</span>
                     </p>
                     <p>
-                        Percentage Increase: <span>{percent}</span>
+                        Percentage Increase: <span className='font-bold'>{percent}</span>
                     </p>
                 </div>
             </div>
