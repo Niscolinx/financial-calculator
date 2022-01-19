@@ -113,10 +113,8 @@ const Form = () => {
                     </p>
 
                     <div className='mt-6'>
-                        <div className='border-t relative'>
-                            <span className='absolute right-0 bg-[#1c124d] text-white p-2'>
-                                1
-                            </span>
+                        <div className='border-t'>
+                          
                             <p>
                                 Initial Capital:{' '}
                                 <span className='font-bold'>${capital}</span>
