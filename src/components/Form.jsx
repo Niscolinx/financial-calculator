@@ -51,6 +51,8 @@ const Form = () => {
 
     }
 
+    console.log(details)
+
     return (
         <div className='grid w-full place-content-stretch bg-white py-8 px-12 '>
             <h2 className='font-medium text-center text-[#1c124d] mb-4 text-2xl'>
