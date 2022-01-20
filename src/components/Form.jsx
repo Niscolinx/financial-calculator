@@ -22,6 +22,7 @@ const Form = () => {
     }
 
     const handleSubmit = async (e) => {
+        console.log('submitted')
         e.preventDefault()
 
         capital = Number(capital)
