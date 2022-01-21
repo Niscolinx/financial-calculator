@@ -225,22 +225,19 @@ const Form = () => {
                                 <p>
                                     Initial Capital:{' '}
                                     <span className='font-bold'>
-                                        ${capital}
                                     </span>
                                 </p>
                                 <p>
                                     profit:{' '}
-                                    <span className='font-bold'>${profit}</span>
+                                    <span className='font-bold'></span>
                                 </p>
                                 <p>
                                     Final Capital:{' '}
                                     <span className='font-bold'>
-                                        ${finalCapital}
                                     </span>
                                 </p>
                             </div>
-                            {details &&
-                                details.map((value, i) => {
+                            
                                     return (
                                         <div
                                             className='border-t mt-2 relative'
@@ -252,24 +249,22 @@ const Form = () => {
                                             <p>
                                                 Initial Capital:{' '}
                                                 <span className='font-bold'>
-                                                    ${value.capital}
+                                            
                                                 </span>
                                             </p>
                                             <p>
                                                 profit:{' '}
                                                 <span className='font-bold'>
-                                                    ${value.profit}
+                                                    
                                                 </span>
                                             </p>
                                             <p>
                                                 Final Capital:{' '}
                                                 <span className='font-bold'>
-                                                    ${value.finalCapital}
                                                 </span>
                                             </p>
                                         </div>
                                     )
-                                })}
                         </div>
                     </div>
                 </div>
