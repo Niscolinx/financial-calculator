@@ -62,7 +62,7 @@ const Form = () => {
             </h2>
             <div className='flex gap-8'>
                 <div className='grid'>
-                    <h4 className='font-medium text-center text-[#1c124d] mb-4'>
+                    <h4 className='font-medium text-center text-[#1c124d]'>
                         Profit Percentage
                     </h4>
                     <form className='grid w-full' onSubmit={handleSubmit}>
