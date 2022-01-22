@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 
 const Form = () => {
     let [capital, setCapital] = useState('')
-    let [percent, setPercent] = useState('')
+    let [percent, setPercent] = useState(5)
     let [duration, setDuration] = useState('')
     let [profit, setProfit] = useState(0)
     let [finalCapital, setFinalCapital] = useState('')
