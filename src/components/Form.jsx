@@ -171,11 +171,11 @@ const Form = () => {
                         </div>
                     </div>
                 </div>
-                <div className='grid'>
+                <div className='grid h-max'>
                     <h4 className='font-medium text-center text-[#1c124d]'>
                         Trading Plan
                     </h4>
-                    <form className='grid w-full h-max' onSubmit={handleSubmit}>
+                    <form className='grid w-full' onSubmit={handleSubmit}>
                         <input
                             type='number'
                             id='capital'
