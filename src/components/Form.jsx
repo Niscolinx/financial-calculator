@@ -62,6 +62,9 @@ const Form = () => {
             </h2>
             <div className='flex gap-8'>
                 <div className='grid'>
+                    <h4 className='font-medium text-center text-[#1c124d] mb-4'>
+                        Profit Percentage
+                    </h4>
                     <form className='grid w-full' onSubmit={handleSubmit}>
                         <input
                             type='number'
@@ -224,45 +227,32 @@ const Form = () => {
                             <div className='border-t'>
                                 <p>
                                     Initial Capital:{' '}
-                                    <span className='font-bold'>
-                                    </span>
-                                </p>
-                                <p>
-                                    profit:{' '}
                                     <span className='font-bold'></span>
                                 </p>
                                 <p>
+                                    profit: <span className='font-bold'></span>
+                                </p>
+                                <p>
                                     Final Capital:{' '}
-                                    <span className='font-bold'>
-                                    </span>
+                                    <span className='font-bold'></span>
                                 </p>
                             </div>
-                            
-                                    return (
-                                        <div
-                                            className='border-t mt-2 relative'
-                                        >
-                                            <span className='absolute right-0 bg-[#1c124d] text-white p-1'>
-                                            </span>
-                                            <p>
-                                                Initial Capital:{' '}
-                                                <span className='font-bold'>
-                                            
-                                                </span>
-                                            </p>
-                                            <p>
-                                                profit:{' '}
-                                                <span className='font-bold'>
-                                                    
-                                                </span>
-                                            </p>
-                                            <p>
-                                                Final Capital:{' '}
-                                                <span className='font-bold'>
-                                                </span>
-                                            </p>
-                                        </div>
-                                    )
+                            return (
+                            <div className='border-t mt-2 relative'>
+                                <span className='absolute right-0 bg-[#1c124d] text-white p-1'></span>
+                                <p>
+                                    Initial Capital:{' '}
+                                    <span className='font-bold'></span>
+                                </p>
+                                <p>
+                                    profit: <span className='font-bold'></span>
+                                </p>
+                                <p>
+                                    Final Capital:{' '}
+                                    <span className='font-bold'></span>
+                                </p>
+                            </div>
+                            )
                         </div>
                     </div>
                 </div>
