@@ -175,7 +175,7 @@ const Form = () => {
                     <h4 className='font-medium text-center text-[#1c124d]'>
                         Trading Plan
                     </h4>
-                    <form className='grid w-full' onSubmit={handleSubmit}>
+                    <form className=' w-full' onSubmit={handleSubmit}>
                         <input
                             type='number'
                             id='capital'
