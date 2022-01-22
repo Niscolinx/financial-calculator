@@ -61,7 +61,7 @@ const Form = () => {
                 Financial Calculator
             </h2>
         
-            <div className='flex gap-8'>
+            <div className='flex'>
                 <div className='grid'>
                     <h4 className='font-medium text-center text-[#1c124d]'>
                         Profit Percentage
