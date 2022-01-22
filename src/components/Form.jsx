@@ -171,7 +171,7 @@ const Form = () => {
                         </div>
                     </div>
                 </div>
-                <div className='grid h-max'>
+                <div className='grid h-min'>
                     <h4 className='font-medium text-center text-[#1c124d]'>
                         Trading Plan
                     </h4>
