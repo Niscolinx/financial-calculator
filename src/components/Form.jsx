@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import { useHistory } from 'react-router-dom'
+import React, { useState } from 'react'
 
 const Form = () => {
     let [capital, setCapital] = useState('')
@@ -27,10 +26,6 @@ const Form = () => {
         percent = Number(percent)
         duration = Number(duration)
 
-        // let profit = capital * (percent / 100)
-        // let finalCapital = capital + profit
-        // setProfit(profit)
-        // setFinalCapital(finalCapital)
 
         let toCount = []
 
