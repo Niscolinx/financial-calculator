@@ -105,7 +105,7 @@ const Form = () => {
                     </p>
                     <p>
                         Total Summary:{' '}
-                        <span className='font-bold'>{totalSummary}</span>
+                        <span className='font-bold'>${totalSummary}</span>
                     </p>
 
                     <div className='mt-6'>
