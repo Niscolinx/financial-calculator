@@ -35,25 +35,22 @@ const Form = () => {
 
         let toCount = []
 
-        let finalCapital
         for (let i = 0; i <= duration; i++) {
-            let capital = finalCapital
             let profit = Math.floor(capital * (percent / 100))
-            finalCapital = Math.floor(capital + profit)
-
+            let finalCapital = Math.floor(capital + profit)
+            
             toCount.push({
                 capital,
                 profit,
                 finalCapital,
             })
 
-            console.log(capital, profit, finalCapital)
+            capital = finalCapital
+
         }
-        console.log(toCount)
         setDetails(toCount)
     }
 
-    console.log(details)
 
     return (
         <div className='grid w-full place-content-stretch bg-white py-8 px-12 '>
@@ -112,25 +109,7 @@ const Form = () => {
                     </p>
 
                     <div className='mt-6'>
-                        <div className='border-t relative'>
-                            <span className='absolute right-0 bg-[#1c124d] text-white p-2'>
-                                1
-                            </span>
-                            <p>
-                                Initial Capital:{' '}
-                                <span className='font-bold'>${capital}</span>
-                            </p>
-                            <p>
-                                profit:{' '}
-                                <span className='font-bold'>${profit}</span>
-                            </p>
-                            <p>
-                                Final Capital:{' '}
-                                <span className='font-bold'>
-                                    ${finalCapital}
-                                </span>
-                            </p>
-                        </div>
+                        
                         {details &&
                             details.map((value, i) => {
                                 return (
