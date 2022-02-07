@@ -118,7 +118,7 @@ const Form = () => {
                                         key={i}
                                     >
                                         <span className='absolute right-0 bg-[#1c124d] text-white p-2'>
-                                            {i}
+                                            {i + 1}
                                         </span>
                                         <p>
                                             Initial Capital:{' '}
