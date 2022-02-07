@@ -5,8 +5,7 @@ const Form = () => {
     let [capital, setCapital] = useState('')
     let [percent, setPercent] = useState('')
     let [duration, setDuration] = useState('')
-    let [profit, setProfit] = useState(0)
-    let [finalCapital, setFinalCapital] = useState('')
+    const [totalSummary, setTotalSummary] = (0)
     const [details, setDetails] = useState([])
 
     const handleCapital = (e) => {
@@ -106,6 +105,10 @@ const Form = () => {
                     <p>
                         Percentage Increase:{' '}
                         <span className='font-bold'>{percent}</span>
+                    </p>
+                    <p>
+                        Total Summary:{' '}
+                        <span className='font-bold'>{totalSummary}</span>
                     </p>
 
                     <div className='mt-6'>
