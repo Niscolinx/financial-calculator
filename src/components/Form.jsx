@@ -28,7 +28,7 @@ const Form = () => {
 
 
         let toCount = []
-
+        let summary = 0
         for (let i = 0; i < duration; i++) {
             let profit = Math.floor(capital * (percent / 100))
             let finalCapital = Math.floor(capital + profit)
@@ -40,9 +40,11 @@ const Form = () => {
             })
 
             capital = finalCapital
+            summary = finalCapital
 
         }
         setDetails(toCount)
+        setTotalSummary(summary)
     }
 
 
