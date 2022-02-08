@@ -20,6 +20,7 @@ const Form = () => {
     }
 
     const handleSubmit = async (e) => {
+console.log('update') 
         e.preventDefault()
 
         capital = Number(capital)
